@@ -179,4 +179,94 @@ section{
     padding: 100px 60px ;
 }
 
+.seinic{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
 
+.seinic .inicioText{
+    max-width: 960px;
+}
+
+.seinic .inicioText h1{
+    font-size: 73.6px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.inicioText .textAnimed{
+    position: relative;
+    width: 524.8px;  
+}
+
+.inicioText .textAnimed{
+   font-size: 28px; 
+   font-weight: 700;
+   color: transparent;
+   -webkit-text-stroke: 1.2px var(--second-color);
+}
+
+.inicioText p{
+    font-size: 16px;
+    margin: 32px 0 64px;
+}
+
+.fran{
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+    color: chartreuse;
+}
+
+.imgF{
+    padding: 10px 10px;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+}
+
+.btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 50px;
+}
+
+.btn-box .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 180px;
+    height: 100%;
+    border: 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: var(--text-color);
+    z-index: 1;
+    overflow: hidden;
+    transform: .5s;
+}
+
+.btn-box .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(70, 70, 70, 0.644);
+    transition: .5s;
+    z-index: -1;
+}
+
+.btn-box .btn:hover::before{
+    width: 100%;
+}
