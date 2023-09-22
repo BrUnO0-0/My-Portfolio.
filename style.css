@@ -122,7 +122,7 @@ li {
 
 .lista.close .navicon li a {
     width: calc(48px - ((4px * 2)));
-    transition: all .3 ease;
+    transition: all  ease;
 }
 
 .lista .navicon li a .bx {
@@ -173,16 +173,17 @@ li {
     font-size: 30px;
 }
 section{
-    width: 100vh;
-    height: 100vh;
-    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100vb;
+    margin: 0 ;
     padding: 100px 60px ;
 }
 
 .seinic{
     display: flex;
     align-items: center;
-    padding: 0 9%;
+    padding: 0 8%;
 }
 
 .seinic .inicioText{
@@ -190,14 +191,14 @@ section{
 }
 
 .seinic .inicioText h1{
-    font-size: 73.6px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 1.5;
 }
 
 .inicioText .textAnimed{
     position: relative;
-    width: 524.8px;  
+    width: 524.8px;
 }
 
 .inicioText .textAnimed{
@@ -216,16 +217,7 @@ section{
     font-weight: 500;
     font-size: 15px;
     font-style: italic;
-    color: chartreuse;
-}
-
-.imgF{
-    padding: 10px 10px;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 35px;
+    color: rgba(255, 0, 0, 0.651);
 }
 
 .btn-box{
@@ -248,8 +240,14 @@ section{
     border-radius: 50px;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 1.2px;
-    color: var(--text-color);
+    letter-spacing: 1px;
+    background-image: linear-gradient(
+        to top left,
+        rgb(42, 36, 143),
+        rgb(74, 116, 255),
+        rgba(252, 3, 3, 0.658)
+    );
+    color: var(--second-dark);
     z-index: 1;
     overflow: hidden;
     transform: .5s;
@@ -262,11 +260,70 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: rgba(70, 70, 70, 0.644);
-    transition: .5s;
+    background-image: linear-gradient(
+    to top right,
+    rgba(71, 69, 124, 0.363),
+    rgba(52, 70, 128, 0.534),
+    rgba(76, 190, 41, 0.438)
+    );
+    transition: .75s;
     z-index: -1;
 }
 
 .btn-box .btn:hover::before{
     width: 100%;
 }
+
+.iconRedes{
+    bottom: 64px;
+    position: absolute;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconRedes a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 3.5px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 1;
+    overflow: hidden;
+    color: var(--second-dark);
+}
+
+.iconRedes a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:var(--main-color);
+    z-index: -1;
+    transition: .75s;
+}
+
+.iconRedes a:hover::before{
+    width: 100%;
+}
+
+.imgF{
+    width: 230px;
+    height: 200px;
+    background: transparent;
+    border: 1.5px solid var(--main-color);
+    transition: 3s;
+    display: flex;
+    border-radius: 15px;
+}
+/* PAGINA 1 - INICIO ALGUMAS MUDANÇAS NAS PAG NÃO SERAM NECESSARIAS POR TEREM OS MESMOS ITENS
+POREM OUTRAS, COM CONTEUDOS DIFERENTES UM DO OUTRO TERAM CONTINUIDADE DE CODI AQUI MESMO NESTA FOLHA, NÃO EM OUTRA.
+PRA NÃO TEREM MUITAS FOLHAS DE ESTILO P UM MESMO PROPOSITO
+*/ 
